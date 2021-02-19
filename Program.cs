@@ -6,7 +6,7 @@ namespace Student
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)               // For Tutorial Purposes both Classes are in the same File, in Future this is wrong to do
         {
             List<Student> students = new List<Student>(); // create a list Of Type Student
 
@@ -34,7 +34,6 @@ namespace Student
                 currStudent.HomeTown = city;
 
                 students.Add(currStudent); //adds the current Object into the List
-
             }
 
             string currCity = Console.ReadLine();
@@ -47,9 +46,7 @@ namespace Student
             {
                 Console.WriteLine($"{element.FirstName} {element.LastName} is {element.Age}" +
                 $" years old.");
-            }
-
-
+            } 
             //foreach (Student item in students)
             //{
             //    if (item.HomeTown == currCity)
